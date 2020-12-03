@@ -1,6 +1,6 @@
 const db = require('../connector');
 exports.getArticles = async (req,res)=>{
-    sql = `select * from quickies `
+    sql = `select title from quickies `
     
     try {
         const   [result,fields] = await db.execute(sql)
